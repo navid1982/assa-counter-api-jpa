@@ -54,7 +54,7 @@ public class CounterController {
 	//Or
 	/* http://localhost:8080/api/counters?name=...&increment=true */
 	@PutMapping
-    public Counter updateCounter(@RequestParam(name="name") String counterName,
+        public Counter updateCounter(@RequestParam(name="name") String counterName,
     		                     @RequestParam(name="increment", defaultValue = "true") String doIncrement) {
 		Counter counter = counterService.findByName(counterName);
 		
