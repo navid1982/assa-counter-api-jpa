@@ -1,0 +1,1 @@
+# assa-counter-api-jpa
