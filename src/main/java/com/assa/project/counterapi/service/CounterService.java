@@ -33,8 +33,8 @@ public class CounterService {
 	
 	private void increment(Counter counter) {
 		counter.setValue(counter.getValue() + 1); 
-        counterRepository.save(counter);
-    }
+                counterRepository.save(counter);
+        }
 	
 	public Counter findByName(String name) {
 		Counter counter = counterRepository.findByName(name);
